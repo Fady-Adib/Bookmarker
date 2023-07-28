@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/midea.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+</head>
+
+<body>
+
+    <div class="container py-5 ">
+        <h1 class="text-center mb-5 mx-auto">Bookmarker</h1>
+        <div class="formBookMark py-5 mb-5">
+            <h2 class="text-center"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                    class="fa-solid fa-bookmark"></i></h2>
+            <!-- /* START FORM SECTION */ -->
+            <div class="row g-3 align-items-center mb-4">
+                <div class="col-12">
+                    <label for="bookmarkName" class="form-label fw-bolder fs-4"><i
+                            class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
+                </div>
+                <div class="col-12">
+                    <input type="text" id="bookmarkName" class="form-control-lg w-100 form-control"
+                        placeholder="3-10 characters long letters only.">
+                </div>
+                <div class="col-12">
+                    <span id="bookNameValidation" class="form-text d-none text-danger fw-bolder">
+                        Must be 3-10 characters long letters only.
+                    </span>
+                </div>
+                <div class="col-12">
+                    <label for="siteURL" class="form-label fw-bolder fs-4"><i class="fa-solid fa-chain me-2"></i>Site
+                        URL</label>
+                </div>
+                <div class="col-12">
+                    <input type="text" id="siteURL" class="form-control-lg w-100 form-control"
+                        placeholder=" http(s)://(www.)site Name .(com)">
+                </div>
+                <div class="col-12">
+                    <span id="urlValidation" class="form-text d-none text-danger fw-bolder">
+                        Must http(s)://(www.)site Name .(com)
+                    </span>
+                </div>
+
+                <div class="col-12 text-center">
+
+
+                    <button type="submit" class="btn btn-danger px-5 py-2 fw-bolder fs-4" id="submitBtn">Submit</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- /* END FORM SECTION */ -->
+        <!-- /* START TABLE SECTION */ -->
+
+        <table class="table text-center  table-hover  ">
+            <thead>
+                <th class="fs-4">Index</th>
+                <th class="fs-4">Website Name</th>
+                <th class="fs-4">Visit</th>
+                <th class="fs-4">Delete</th>
+            </thead>
+            <tbody id="displayTable">
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- /* END TABLE SECTION */ -->
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
